@@ -1,6 +1,6 @@
 # TILScout Repository
 
-Welcome to the TILScout repository! This guide will help you set up and run the TILScout analysis tool on your system. Please follow the steps below to ensure a smooth setup and execution.
+This guide will help you set up and run the TILScout analysis tool on your system. Please follow the steps below to ensure a smooth setup and execution.
 
 ## Prerequisites
 
