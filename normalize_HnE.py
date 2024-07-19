@@ -1,26 +1,7 @@
-# https://youtu.be/tNfcvgPKgyU
 
-# Original video on H&E topic: https://youtu.be/yUrwEYgZUsA
 """
-This code normalizes staining appearance of H&E stained images.
-It also separates the hematoxylin and eosing stains in to different images. 
-
-Workflow based on the following papers:
-A method for normalizing histology slides for quantitative analysis. 
-M. Macenko et al., ISBI 2009
-    http://wwwx.cs.unc.edu/~mn/sites/default/files/macenko2009.pdf
-
-Efficient nucleus detector in histopathology images. J.P. Vink et al., J Microscopy, 2013
-
-Original MATLAB code:
-    https://github.com/mitkovetta/staining-normalization/blob/master/normalizeStaining.m
- 
-Other useful references:
-    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5226799/
-    https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0169875
-
 PROPOSED WORKFLOW:  
-    
+
 Input: RGB image
 Step 1: Convert RGB to OD (optical density)
 Step 2: Remove data with OD intensity less than β
@@ -153,13 +134,3 @@ def norm_HnE(img, Io=240, alpha=1, beta=0.15):
     E = np.reshape(E.T, (h, w, 3)).astype(np.uint8)
     
     return (Inorm, H, E)
-
-# img=cv2.imread('images/HnE_Image.jpg', 1)
-# img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
-# norm_img, H_img, E_img = norm_HnE(img, Io=240, alpha=1, beta=0.15)
-
-
-# plt.imsave("images/HnE_normalized.jpg", Inorm)
-# plt.imsave("images/HnE_separated_H.jpg", H)
-# plt.imsave("images/HnE_separated_E.jpg", E)
