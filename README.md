@@ -17,8 +17,8 @@ Before you begin, make sure you have Python installed on your system. You will a
    - Place your whole slide image (WSI) files into the `WSI_example` directory. These are the files that will be analyzed by the script.
 
 3. **Install Required Python Libraries**
-   -openslide (version 1.2.0), tensorflow (version 2.10.0), scikit-learn (version 1.2.1), pandas (version 1.4.4), matplotlib (version 3.7.0), and numpy (version 1.23.5).
-   -Other libraries required for running the TILScout.py script.
+   - openslide (version 1.2.0), tensorflow (version 2.10.0), scikit-learn (version 1.2.1), pandas (version 1.4.4), matplotlib (version 3.7.0), and numpy (version 1.23.5).
+   - Other libraries required for running the TILScout.py script.
  
 ## Running the Script
 
