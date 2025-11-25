@@ -1,7 +1,7 @@
 # TILScout Repository
 
 This guide will help you set up and run the TILScout analysis tool on your system. Please follow the steps below to ensure a smooth setup and execution.
-
+TILScout is freely available for non-commercial academic research.
 ## Prerequisites
 
 Before you begin, make sure you have Python installed on your system. You will also need to install specific Python libraries required for running the TILScout.py script. These libraries are specified within the script itself.
